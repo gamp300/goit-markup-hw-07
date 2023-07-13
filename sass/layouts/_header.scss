@@ -1,0 +1,72 @@
+/*//////////////////////////////////////////////////////
+Inicio Menu*/
+.menu {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+
+  &__link {
+    position: relative;
+    display: inline-block;
+    color: #212121;
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+  }
+
+  &__current {
+    color: $color-primary;
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $color-primary;
+      border-radius: 2px;
+      bottom: -24px;
+    }
+  }
+
+  &__icon-email,
+  &__icon-telephone {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    &:hover {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+  }
+
+  &__contact {
+    width: 15px;
+    height: 15px;
+    color: #757575;
+    fill: #757575;
+    &:hover {
+      color: $color-primary;
+      fill: $color-primary;
+    }
+  }
+}
+
+/*Inicio HEADER*/
+.header {
+  &__title {
+    color: rgb(255, 255, 255);
+    height: 600px;
+    background: rgba(47, 48, 58, 0.4);
+    padding: 200px;
+    background-image: url(../images/header.jpg);
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+  }
+}
